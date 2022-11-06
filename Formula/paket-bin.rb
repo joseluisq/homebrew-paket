@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class PaketBin < Formula
-  version '0.1.2'
+  version '0.1.3'
   desc 'A simple and fast package manager for the Fish shell written in Rust'
   homepage 'https://github.com/joseluisq/paket/'
   license any_of: ['MIT', 'Apache-2.0']
@@ -12,7 +12,7 @@ class PaketBin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/paket/releases/download/v#{version}/paket-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 '4d5686827daf747bf0bd5b046554940bd31cee53d188aa1ad28b16ae5621d8fe'
+      sha256 'fef4bc11b1ac11737a124c4f9a358898b93c4b7413d858c23e0e434694d45fa3'
 
       def install
         bin.install 'paket'
@@ -25,7 +25,7 @@ class PaketBin < Formula
 
     if Hardware::CPU.arm?
       url "https://github.com/joseluisq/paket/releases/download/v#{version}/paket-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 '0e16c5934bc931c02004a267c54755bc136d8ab0fd24f200ca34fb711693eb96'
+      sha256 '7750241370a4e6cb06a2a31a4e15cbf6e45946daf057cf956ebe94d9591d531e'
 
       def install
         bin.install 'paket'
@@ -40,7 +40,7 @@ class PaketBin < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/paket/releases/download/v#{version}/paket-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 '1fc2641afed9ef22d7ed0b5df91075925caaf84a7129081617741a12f917e120'
+      sha256 '3a7ee63724a6e84ecf2c9acadb24de842722b135fddaa9704ecf8cc987557093'
 
       def install
         bin.install 'paket'
@@ -53,7 +53,7 @@ class PaketBin < Formula
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/joseluisq/paket/releases/download/v#{version}/paket-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7181013ccfeef1232f806398123392f3b5d3eb79a23f9ef5cba96d1db6fa2dbf"
+      sha256 "ae6683ab74e5569fc68e609d1a8627b9101f8c248f5f175e2bfe7a424ff6ff7e"
 
       def install
         bin.install 'paket'
