@@ -4,8 +4,8 @@
 class PaketSrc < Formula
   desc 'A simple and fast package manager for the Fish shell written in Rust'
   homepage 'https://github.com/joseluisq/paket/'
-  url 'https://github.com/joseluisq/paket/archive/v0.1.3.tar.gz'
-  sha256 'ceb64032a7466a023ee298890f67d4a0df6869cb4273f49c6fa77ff22c9e9550'
+  url 'https://github.com/joseluisq/paket/archive/v0.1.5.tar.gz'
+  sha256 '05f45793c480d9c1aa4298dff1cdf991a4a741f1808f2d0cef107d62b5dae53c'
   license any_of: ['MIT', 'Apache-2.0']
   head 'https://github.com/joseluisq/paket.git', branch: 'master'
 
